@@ -302,6 +302,7 @@
   }
 
   .about-content p {
+    text-align: left;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
   }
@@ -396,12 +397,20 @@
 
   .education-content .content h3{
     font-size: 2rem;
-  } 
-
+  }
+  
   .education-content .content p{
     font-size: 1.6rem;
     padding-top: .5rem;
   }
+
+  .education-content .content  ul {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-left: 1.2rem ;
+  }
+
+ 
 
   .skills{
     min-height: auto;
@@ -479,6 +488,27 @@
     background: var(--main-color);
   }
 
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 80%;
+  }
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 60%;
+  }
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 60%;
+  }
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 70%;
+  }
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 30%;
+  }
+  .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 40%;
+  }
+  .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 90%;
+  }
   span{
     color: var(--main-color);
   }
@@ -528,7 +558,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    width: 34.5rem;
+    /* width: 34.5rem; */
     height: 5rem;
   }
 

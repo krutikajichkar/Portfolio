@@ -27,3 +27,18 @@ window.onscroll = () => {
 
 }
 
+// document.getElementById('downloadCV').addEventListener('click', function() {
+//     // Replace 'your_cv.pdf' with the actual filename of your CV
+//     const cvFilename = 'Resume_KJ(6)';
+    
+//     // Replace 'path/to/your_cv.pdf' with the actual file path or URL of your CV
+//     const cvFilePath = 'https://drive.google.com/file/d/1ho1BZKo9VaiZkAS1X6-TD_PrWRHp1cwX/view?usp=sharing';
+
+//     const link = document.createElement('a');
+//     link.href = cvFilePath;
+//     link.download = cvFilename;
+//     link.target = '_blank'; // Open the link in a new tab
+//     link.click();
+// });
+
+
