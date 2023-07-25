@@ -79,9 +79,9 @@
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background-image: url('./assets/HomePage.jpg') ;
+    /* background-image: url('./assets/HomePage.jpg') ;
      background-size: cover; 
-    background-position: center; 
+    background-position: center;  */
   }
 
   .home-content{
@@ -89,11 +89,6 @@
     max-width: 60rem;
   }
 
-  .home-content .image{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
 
   .home-content h1{
     font-size: 5.6rem;
