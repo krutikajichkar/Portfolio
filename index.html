@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Krutika's Portfolio</title>
+    
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+   
   </head>
+  
   <body>
     <!-- header-section -->
     <header class="header">
@@ -324,7 +328,7 @@
         </div>
         <div class="textarea-field">
           <textarea
-            name=""
+            
             id=""
             cols="30"
             rows="10"
@@ -337,6 +341,7 @@
         <div class="btn-box btns">
           <button type="submit" class="btn">Submit</button>
         </div>
+       
       </form>
     </section>
 
@@ -352,20 +357,23 @@
     </footer>
 
     <script src="./script.js"></script>
+    
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbybvhJQijbybSRJ9OWANqECbS08PaoPTAOuoTXo0CKXVvYeLh1Z4OciaxNAC8JGy-zFug/exec";
-      const form = document.forms["submit-to-google-sheet"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            alert("Success!", response);
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyfDeKm7x_bte1_iJ-Rm6whfzHYY-wYZbkNmyfG1oozSQ3RUB28fLagUkLf0XJzDo-f8w/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            alert("Success!!");
             window.location.reload();
           })
-          .catch((error) => console.error("Error!", error.message));
-      });
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
+
+
+   
   </body>
 </html>
