@@ -78,10 +78,9 @@
   .home{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 9%;
-    /* background-image: url('./assets/HomePage.jpg') ;
-     background-size: cover; 
-    background-position: center;  */
+    
   }
 
   .home-content{
@@ -196,6 +195,38 @@
   .btn-box .btn:hover::before{
     width: 100%;
     color: var(--text-color);
+  }
+
+  .dev-pic img{
+    width: 35vw;
+  }
+
+  .dev-pic{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
   }
 
   .home-sci{
@@ -530,6 +561,11 @@
     border: .2rem solid var(--bg-color);
   }
 
+  .services-container .services-box:hover{
+    transform: scale(1.0,1.0);
+    box-shadow: 0px 2px 10px 2px var(--main-color);
+  }
+
   .services-container .services-box img{
     width: 100%;
     height: 25rem;
@@ -799,10 +835,16 @@
     .home-sci{
       bottom: 2rem;
     }
-
+/* 
     .home-content{
       text-align: center;
-    }
+    } */
+    .dev-pic{
+      display: none;
+     }
+     .home-sci{
+       bottom: 2rem;
+     }
 
   }
 
